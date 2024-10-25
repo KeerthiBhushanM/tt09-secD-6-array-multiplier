@@ -17,7 +17,7 @@ module tt_um_4x4_array_multiplier (
     input  wire       rst_n     // reset_n - low to reset
 );
 
- 
+  assign uio_in = 0;
   assign uio_out = 0;
   assign uio_oe  = 0;
 

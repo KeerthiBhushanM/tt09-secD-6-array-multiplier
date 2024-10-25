@@ -37,41 +37,7 @@ module part(
     adder stage3 (m[3]&c,q4,w[2],o[2],co);
   
 endmodule 
-module array_mult_generate(
-	input [3:0] m,
-	input [3:0] q,
-	output [7:0] p
-);
 
-	wire [2:0] o [0:4];
-	
-	assign o[0]=3'b000;
-    
-	wire [4:0] c;
-	
-	assign c[0]=1'b0;
-	
-    assign p[4]=o[4][0];
-    assign p[5]=o[4][1];
-    assign p[6]=o[4][2];
-    assign p[7]=c[4];
-    generate
-
-   
-	genvar v;
-		for(v=0; v<=3; v=v+1) begin
-			
-			part pa (m,o[v],c[v],q[v],o[v+1],c[v+1],p[v]);
-			
-		end
-	
-	
-   
-	
-   
-    endgenerate
-    
-endmodule
 module array_mult_structural(
 	input [3:0] m,
 	input [3:0] q,
