@@ -17,12 +17,12 @@ module tt_um_4x4_array_multiplier (
     input  wire       rst_n     // reset_n - low to reset
 );
 
-  assign uio_in = 0;
+
   assign uio_out = 0;
   assign uio_oe  = 0;
 
   // List all unused inputs to prevent warnings
-  wire _unused = &{ena, clk, rst_n, 1'b0};
+  wire _unused = &{ena, clk, rst_n, uio_in, 1'b0};
 	array_mult_structural thing ( .m(ui_in[3:0]),
 				.q(ui_in[7:4]),
 				.p(uo_out));
