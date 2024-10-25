@@ -4,7 +4,7 @@
 # defaults
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
-SRC_DIR = $(PWD)/../src
+SRC_DIR = C:\Users\al6106\tt09-secD-6-array-multiplier\src
 PROJECT_SOURCES = project.v
 
 ifneq ($(GATES),yes)
