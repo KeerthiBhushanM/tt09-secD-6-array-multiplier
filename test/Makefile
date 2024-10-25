@@ -4,7 +4,7 @@
 # defaults
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
-SRC_DIR = C:\Users\al6106\tt09-secD-6-array-multiplier\src
+SRC_DIR = C:/Users/al6106/tt09-secD-6-array-multiplier/src
 PROJECT_SOURCES = project.v
 
 ifneq ($(GATES),yes)
@@ -32,7 +32,7 @@ VERILOG_SOURCES += $(PWD)/gate_level_netlist.v
 endif
 
 # Include the testbench sources:
-VERILOG_SOURCES += $(PWD)/tb.v
+VERILOG_SOURCES += C:\Users\al6106\tt09-secD-6-array-multiplier\src\tb.v
 TOPLEVEL = tb
 
 # MODULE is the basename of the Python test file
