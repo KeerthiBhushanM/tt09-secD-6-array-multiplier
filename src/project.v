@@ -87,9 +87,9 @@ module tt_um_4x4_array_multiplier (
 
   // List all unused inputs to prevent warnings
   wire _unused = &{ena, clk, rst_n, uio_in, 1'b0};
-	array_mult_structural thing ( m(ui_in[3:0]),
-				q(ui_in[7:4]),
-				p(uo_out));
+	array_mult_structural thing ( ui_in[3:0],
+				ui_in[7:4],
+				uo_out);
 		
 
 endmodule
