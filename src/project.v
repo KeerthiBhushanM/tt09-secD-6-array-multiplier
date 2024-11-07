@@ -70,7 +70,7 @@ endmodule
 
 
 
-module tt_um_4x4_array_multiplier (
+module tt_um_4x4_array_multiplier_NuKoP (
     input  wire [7:0] ui_in,    // Dedicated inputs
     output wire [7:0] uo_out,   // Dedicated outputs
     input  wire [7:0] uio_in,   // IOs: Input path
