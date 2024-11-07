@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
 project:
-  title:        "4 x 4 array multiplier"      # Project title
+  title:        "4 x 4 array multiplier NuKoP"      # Project title
   author:       "Aiden Li, Mahid Hosen"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "given two 4 bit unsigned binary numbers, outputs the product of the two numbers"      # One line description of what your project does
